@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="960.0" xmlns:fx="http://javafx.com/fxml" fx:controller="skillsmatter.BoardController" onMousePressed="#handleButtonAction">
+  <children>
+    <ImageView fx:id="background" fitHeight="540.0" fitWidth="1720.15625" layoutX="-327.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@skillsmatterbgnd.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="97.76066868866535" fitWidth="249.7298583984375" layoutX="665.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <Reflection>
+          <input>
+            <DropShadow color="#646464" offsetX="5.0" offsetY="5.0" />
+          </input>
+        </Reflection>
+      </effect>
+      <image>
+        <Image url="@skillsmatterlogo.gif" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="136.66664513237592" fitWidth="162.99996948242188" layoutX="701.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@michaelfeathers.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label fx:id="title" layoutX="63.0" layoutY="38.0" text="Technical Debt Reduction">
+      <font>
+        <Font size="36.0" />
+      </font>
+    </Label>
+    <Label fx:id="description" layoutX="63.0" layoutY="128.0" prefHeight="202.0" prefWidth="507.0" text="Technical Debt is a catch-all term that we use for entropy in software development. Systems grow, become unruly, and difficult to work with. When this happens, we often know that we can do better, but it is hard to take concrete actions which help us get a strong a sense of control over the evoluton of an entire code base.This is material beyond what Michael outlined in his classic book &quot;Working Effectively in Legacy Code.&quot; It is more focused on large scale change.Please note that places are limited so book now to avoid disappointment!LEARN HOW TO:Identify various types of technical debtAssess the amount of technical debt in your codebaseDevelop design plans for large-scale refactoring and debt mitigationAlter team and organizational process to make refactoring a first-class practicePROGRAMMEDuring this two-day Masterclass, Michael will outline what he has learned about managing change in large code bases over time.Topics covered include:A Pragmatic Definition of Technical DebtDesign Decision CardsFeature ProbesScratch RefactoringDesign Direction TaggingLimited WIP RefactoringDesign Quality Trend AnalysisSystematic Refactoring/Rewriting" wrapText="true" />
+    <Label layoutX="701.0" layoutY="205.0" text="Michael Feathers">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Separator layoutX="621.0" layoutY="60.0" orientation="VERTICAL" prefHeight="428.0" />
+    <Label layoutX="63.0" layoutY="87.0" text="Room: Space Invaders" textFill="GREY">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
